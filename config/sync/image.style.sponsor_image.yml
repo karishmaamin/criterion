@@ -1,0 +1,14 @@
+uuid: 4be1a5ca-9115-44ee-8830-8acdf763618e
+langcode: en
+status: true
+dependencies: {  }
+name: sponsor_image
+label: 'sponsor image'
+effects:
+  8e4bb0cb-5400-443f-8fbd-73918aa6d60b:
+    uuid: 8e4bb0cb-5400-443f-8fbd-73918aa6d60b
+    id: image_resize
+    weight: 1
+    data:
+      width: 250
+      height: 230

@@ -1,0 +1,14 @@
+uuid: d9308e9a-bf27-47c0-8982-8ddeac87a31e
+langcode: en
+status: true
+dependencies: {  }
+name: event_image
+label: 'event image'
+effects:
+  3f19314a-70a4-4689-a2fe-5096005ff66e:
+    uuid: 3f19314a-70a4-4689-a2fe-5096005ff66e
+    id: image_resize
+    weight: 1
+    data:
+      width: 650
+      height: 450

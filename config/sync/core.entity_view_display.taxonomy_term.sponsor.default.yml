@@ -1,0 +1,33 @@
+uuid: 292059ab-26d0-452c-b807-d2fa928c923d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.sponsor.field_sponsor_image
+    - image.style.sponsor_image
+    - taxonomy.vocabulary.sponsor
+  module:
+    - image
+    - text
+id: taxonomy_term.sponsor.default
+targetEntityType: taxonomy_term
+bundle: sponsor
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sponsor_image:
+    weight: 1
+    label: above
+    settings:
+      image_style: sponsor_image
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

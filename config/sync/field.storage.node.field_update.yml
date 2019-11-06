@@ -1,0 +1,19 @@
+uuid: a2eae6c3-5dbe-427a-a631-7604d649fddd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_update
+field_name: field_update
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
