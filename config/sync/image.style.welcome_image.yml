@@ -1,0 +1,15 @@
+uuid: 1949263c-2d4d-4021-b47f-33cb2127c701
+langcode: en
+status: true
+dependencies: {  }
+name: welcome_image
+label: 'welcome image'
+effects:
+  0d9863a2-ba26-4e9b-af5c-592b31581d63:
+    uuid: 0d9863a2-ba26-4e9b-af5c-592b31581d63
+    id: image_scale
+    weight: 1
+    data:
+      width: 1600
+      height: null
+      upscale: false

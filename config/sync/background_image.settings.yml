@@ -1,0 +1,161 @@
+defaults:
+  blur:
+    type: 2
+    radius: 50
+    speed: 1
+  dark: false
+  full_viewport: false
+  preload:
+    background_color: '#ffffff'
+  text:
+    format: full_html
+    value: ''
+entities:
+  node:
+    article:
+      enable: true
+      embed: true
+      require: false
+      group: advanced
+    page:
+      enable: true
+      embed: true
+      require: false
+      group: advanced
+    events:
+      enable: false
+      embed: false
+      group: ''
+      require: false
+    updates:
+      enable: false
+      embed: false
+      group: ''
+      require: false
+    venue:
+      enable: false
+      embed: false
+      group: ''
+      require: false
+  user:
+    user:
+      enable: true
+      embed: true
+      require: false
+      group: advanced
+  view:
+    view:
+      enable: true
+      embed: true
+      require: false
+      group: advanced
+  aggregator_feed:
+    aggregator_feed:
+      enable: false
+      embed: false
+      group: ''
+      require: false
+  comment:
+    comment:
+      enable: false
+      embed: false
+      group: ''
+      require: false
+  taxonomy_term:
+    sponsor:
+      enable: false
+      embed: false
+      group: ''
+      require: false
+    tags:
+      enable: false
+      embed: false
+      group: ''
+      require: false
+  webform_submission:
+    contact:
+      enable: false
+      embed: false
+      group: ''
+      require: false
+    registration_form:
+      enable: false
+      embed: false
+      group: ''
+      require: false
+    template_contact:
+      enable: false
+      embed: false
+      group: ''
+      require: false
+    template_employee_evaluation:
+      enable: false
+      embed: false
+      group: ''
+      require: false
+    template_feedback:
+      enable: false
+      embed: false
+      group: ''
+      require: false
+    template_issue:
+      enable: false
+      embed: false
+      group: ''
+      require: false
+    template_job_application:
+      enable: false
+      embed: false
+      group: ''
+      require: false
+    template_job_seeker_profile:
+      enable: false
+      embed: false
+      group: ''
+      require: false
+    template_medical_appointment:
+      enable: false
+      embed: false
+      group: ''
+      require: false
+    template_registration:
+      enable: false
+      embed: false
+      group: ''
+      require: false
+    template_session_evaluation:
+      enable: false
+      embed: false
+      group: ''
+      require: false
+    template_subscribe:
+      enable: false
+      embed: false
+      group: ''
+      require: false
+    template_user_profile:
+      enable: false
+      embed: false
+      group: ''
+      require: false
+  webform:
+    webform:
+      enable: false
+      embed: false
+      group: ''
+      require: false
+css:
+  base_class: background-image
+  retina_rules:
+    - 'only screen and (-webkit-min-device-pixel-ratio:2)'
+    - 'only screen and (min--moz-device-pixel-ratio:2)'
+    - 'only screen and (-o-min-device-pixel-ratio:2/1)'
+    - 'only screen and (min-device-pixel-ratio:2)'
+    - 'only screen and (min-resolution: 192dpi)'
+    - 'only screen and (min-resolution: 2dppx)'
+image_style:
+  preload: background_image_preload
+  fallback: background_image_lg
+  responsive: background_image
+_core:
+  default_config_hash: o0H_H_IKvNSYaq2WpMD0oy9dmF6nEpGAUCTt5T6FSjo

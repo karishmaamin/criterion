@@ -1,0 +1,19 @@
+uuid: b2b02c3e-81c3-42ff-b5df-9b01f95e3e09
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.background_image
+    - field.storage.block_content.field_wecometext
+id: block_content.background_image.field_wecometext
+field_name: field_wecometext
+entity_type: block_content
+bundle: background_image
+label: wecometext
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

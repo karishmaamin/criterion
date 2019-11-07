@@ -1,0 +1,39 @@
+uuid: 84401703-65e1-4f9f-b6e6-62bb9b832f52
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:background_image:cc37dde3-17e3-488d-9858-dd931acc26b0'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - bartik
+id: ananymoususer
+theme: bartik
+region: featured_top
+weight: 0
+provider: null
+plugin: 'block_content:cc37dde3-17e3-488d-9858-dd931acc26b0'
+settings:
+  id: 'block_content:cc37dde3-17e3-488d-9858-dd931acc26b0'
+  label: 'Ananymous user'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

@@ -33,14 +33,14 @@ content:
     type: basic_string
     weight: 0
     region: content
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
   field_teaser_image:
     type: image
     weight: 1
     region: content
-    label: above
+    label: hidden
     settings:
       image_style: teaser_image
       image_link: ''
