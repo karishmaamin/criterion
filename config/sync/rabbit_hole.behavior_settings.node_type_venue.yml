@@ -1,0 +1,11 @@
+uuid: ca356098-aed6-402c-87e5-af8f130a6b8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.venue
+id: node_type_venue
+action: access_denied
+allow_override: 1
+redirect: ''
+redirect_code: 301

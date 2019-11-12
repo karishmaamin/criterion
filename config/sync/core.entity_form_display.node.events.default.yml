@@ -7,7 +7,9 @@ dependencies:
     - field.field.node.events.field_audience
     - field.field.node.events.field_comments
     - field.field.node.events.field_dont_require_registration
+    - field.field.node.events.field_event_end
     - field.field.node.events.field_event_image
+    - field.field.node.events.field_event_start
     - field.field.node.events.field_event_type
     - field.field.node.events.field_paid
     - field.field.node.events.field_price
@@ -23,10 +25,12 @@ dependencies:
   module:
     - comment
     - conditional_fields
+    - datetime
     - field_group
     - image
     - inline_entity_form
     - link
+    - media_library
     - path
     - webform
 third_party_settings:
@@ -44,6 +48,19 @@ third_party_settings:
         description: ''
         required_fields: true
       label: 'Teaser info'
+    group_date:
+      children:
+        - field_event_end
+        - field_event_start
+      parent_name: ''
+      weight: 18
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Date
 id: node.events.default
 targetEntityType: node
 bundle: events
@@ -56,47 +73,58 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_audience:
-    weight: 9
+    weight: 8
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_comments:
-    weight: 19
+    weight: 17
     settings: {  }
     third_party_settings: {  }
     type: comment_default
     region: content
   field_dont_require_registration:
-    weight: 17
+    weight: 16
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
-  field_event_image:
-    weight: 8
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+  field_event_end:
+    weight: 22
+    settings: {  }
     third_party_settings: {  }
-    type: image_image
+    type: datetime_default
+    region: content
+  field_event_image:
+    type: media_library_widget
+    weight: 21
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_event_start:
+    weight: 23
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
     region: content
   field_event_type:
-    weight: 13
+    weight: 12
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_paid:
-    weight: 10
+    weight: 9
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_price:
-    weight: 11
+    weight: 10
     settings:
       placeholder: ''
     third_party_settings:
@@ -120,14 +148,14 @@ content:
     type: number
     region: content
   field_registration_form:
-    weight: 124
+    weight: 20
     settings:
       default_data: true
     third_party_settings: {  }
     type: webform_entity_reference_select
     region: content
   field_registration_link:
-    weight: 12
+    weight: 11
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -143,7 +171,7 @@ content:
     type: string_textarea
     region: content
   field_sponsors:
-    weight: 16
+    weight: 15
     settings:
       match_operator: CONTAINS
       size: 60
@@ -160,7 +188,7 @@ content:
     type: image_image
     region: content
   field_topics:
-    weight: 14
+    weight: 13
     settings:
       match_operator: CONTAINS
       size: 60
@@ -169,7 +197,7 @@ content:
     type: entity_reference_autocomplete_tags
     region: content
   field_venue:
-    weight: 15
+    weight: 14
     settings:
       form_mode: default
       label_singular: ''

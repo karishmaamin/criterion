@@ -1,0 +1,21 @@
+uuid: 5b22b577-1507-4e95-87b7-9010df315a4d
+langcode: en
+status: true
+dependencies: {  }
+id: approval
+label: Approval
+weight: 4
+is_admin: null
+permissions:
+  - 'edit any events content'
+  - 'rabbit hole bypass node'
+  - 'rabbit hole bypass taxonomy_term'
+  - 'revert events revisions'
+  - 'use editorial transition archive'
+  - 'use editorial transition archived_draft'
+  - 'use editorial transition archived_published'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition publish'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view the administration theme'

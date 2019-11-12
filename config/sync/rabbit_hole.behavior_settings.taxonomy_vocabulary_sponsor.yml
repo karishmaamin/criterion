@@ -1,0 +1,11 @@
+uuid: 5f2b346e-2826-400b-995d-993a50507261
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sponsor
+id: taxonomy_vocabulary_sponsor
+action: access_denied
+allow_override: 1
+redirect: ''
+redirect_code: 301
