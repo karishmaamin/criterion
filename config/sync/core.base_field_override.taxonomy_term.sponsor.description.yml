@@ -1,0 +1,20 @@
+uuid: 6f20c398-e401-4c71-bbdd-54621bc1004c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sponsor
+  module:
+    - text
+id: taxonomy_term.sponsor.description
+field_name: description
+entity_type: taxonomy_term
+bundle: sponsor
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -6,7 +6,7 @@ dependencies:
     - field.storage.node.field_audience
     - field.storage.node.field_shoulder_text
     - field.storage.node.field_venue
-    - system.menu.post-events
+    - system.menu.main
   module:
     - datetime
     - node
@@ -424,7 +424,7 @@ display:
         parent: ''
         weight: 0
         context: '0'
-        menu_name: post-events
+        menu_name: main
     cache_metadata:
       max-age: -1
       contexts:

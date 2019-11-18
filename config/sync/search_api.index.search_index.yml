@@ -1,0 +1,93 @@
+uuid: c7146f4a-8ec6-45b6-a826-5cd9f5ea55d7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - search_api
+  config:
+    - field.storage.node.field_event_image
+    - field.storage.node.field_event_type
+    - field.storage.node.field_shoulder_text
+    - search_api.server.server1
+id: search_index
+name: index
+description: ''
+read_only: false
+field_settings:
+  created:
+    label: 'Authored on'
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - node
+  field_event_image:
+    label: 'Event Image'
+    datasource_id: 'entity:node'
+    property_path: field_event_image
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_event_image
+  field_event_type:
+    label: 'Event type'
+    datasource_id: 'entity:node'
+    property_path: field_event_type
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_event_type
+  field_shoulder_text:
+    label: 'Shoulder text'
+    datasource_id: 'entity:node'
+    property_path: field_shoulder_text
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_shoulder_text
+  status:
+    label: Published
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    dependencies:
+      module:
+        - node
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - events
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  ignorecase:
+    all_fields: false
+    fields:
+      - title
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: server1

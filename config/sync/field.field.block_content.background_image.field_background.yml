@@ -6,7 +6,14 @@ dependencies:
     - block_content.type.background_image
     - field.storage.block_content.field_background
   module:
+    - content_translation
     - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
 id: block_content.background_image.field_background
 field_name: field_background
 entity_type: block_content
@@ -14,7 +21,7 @@ bundle: background_image
 label: Background
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

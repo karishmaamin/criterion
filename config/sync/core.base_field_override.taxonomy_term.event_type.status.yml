@@ -1,0 +1,22 @@
+uuid: fa3ec520-1dba-48ec-af64-932dcf7e3f9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.event_type
+id: taxonomy_term.event_type.status
+field_name: status
+entity_type: taxonomy_term
+bundle: event_type
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

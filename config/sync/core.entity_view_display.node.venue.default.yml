@@ -24,14 +24,16 @@ content:
     region: content
   field_address:
     weight: 102
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: address_default
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
-hidden: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

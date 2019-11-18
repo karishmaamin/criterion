@@ -1,0 +1,11 @@
+uuid: 2fdb863e-0aff-489a-b694-778a2aa3d313
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.parentchild
+id: taxonomy_vocabulary_parentchild
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301

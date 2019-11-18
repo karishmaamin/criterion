@@ -4,7 +4,9 @@ status: true
 dependencies:
   config:
     - system.menu.tools
+    - user.role.event_manager
   module:
+    - user
     - webform
 id: form_submission
 label: 'Form submission'
@@ -22,8 +24,10 @@ display:
     position: 0
     display_options:
       access:
-        type: none
-        options: {  }
+        type: role
+        options:
+          role:
+            event_manager: event_manager
       cache:
         type: tag
         options: {  }
@@ -455,15 +459,24 @@ display:
       footer: {  }
       empty: {  }
       relationships: {  }
-      arguments: {  }
+      arguments:
+        token:
+          id: token
+          table: webform_submission
+          field: token
+          entity_type: webform_submission
+          entity_field: token
+          plugin_id: string
       display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
         - user
+        - user.roles
       tags: {  }
   page_1:
     display_plugin: page
@@ -487,6 +500,8 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
         - user
+        - user.roles
       tags: {  }

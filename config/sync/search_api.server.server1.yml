@@ -1,0 +1,17 @@
+uuid: fb2a19bf-0521-42cc-988f-42627bc7f9ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: server1
+name: server1
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  matching: words
+  autocomplete:
+    suggest_suffix: true
+    suggest_words: true

@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.events.field_event_image
     - field.field.node.events.field_event_start
     - field.field.node.events.field_event_type
+    - field.field.node.events.field_featured
     - field.field.node.events.field_paid
     - field.field.node.events.field_price
     - field.field.node.events.field_registration_form
@@ -91,11 +92,22 @@ content:
     type: datetime_default
     region: content
   field_event_type:
-    weight: 6
+    weight: 17
     label: above
-    settings: {  }
+    settings:
+      link: true
     third_party_settings: {  }
-    type: list_default
+    type: entity_reference_label
+    region: content
+  field_featured:
+    weight: 16
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
   field_paid:
     weight: 3
@@ -159,8 +171,8 @@ content:
     weight: 8
     label: above
     settings:
-      link: true
       view_mode: default
+      link: false
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: content
@@ -173,3 +185,5 @@ hidden:
   field_dont_require_registration: true
   field_shoulder_text: true
   field_teaser_image: true
+  langcode: true
+  search_api_excerpt: true

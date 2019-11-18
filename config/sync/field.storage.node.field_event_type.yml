@@ -1,27 +1,17 @@
-uuid: 7346de7b-8111-48fe-a5ac-494572979fd7
+uuid: bac4c2fb-a0b0-42b0-8772-13050c1ab915
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - options
+    - taxonomy
 id: node.field_event_type
 field_name: field_event_type
 entity_type: node
-type: list_string
+type: entity_reference
 settings:
-  allowed_values:
-    -
-      value: charity
-      label: charity
-    -
-      value: conference
-      label: conference
-    -
-      value: 'awarness program'
-      label: 'awarness program'
-  allowed_values_function: ''
-module: options
+  target_type: taxonomy_term
+module: core
 locked: false
 cardinality: 1
 translatable: true

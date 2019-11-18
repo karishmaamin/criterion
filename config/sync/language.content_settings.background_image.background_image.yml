@@ -1,0 +1,17 @@
+uuid: 725eb854-1161-4be8-bc96-b859321b7c3b
+langcode: en
+status: true
+dependencies:
+  module:
+    - background_image
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: background_image.background_image
+target_entity_type_id: background_image
+target_bundle: background_image
+default_langcode: site_default
+language_alterable: true

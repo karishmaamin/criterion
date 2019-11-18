@@ -5,7 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - node.type.events
-    - system.menu.tools
+    - system.menu.main
     - user.role.administrator
     - user.role.approval
     - user.role.event_manager
@@ -265,7 +265,7 @@ display:
         parent: ''
         weight: 0
         context: '0'
-        menu_name: tools
+        menu_name: main
     cache_metadata:
       max-age: -1
       contexts:

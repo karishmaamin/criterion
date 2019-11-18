@@ -1,0 +1,29 @@
+uuid: fa8fc12f-a098-4e20-a4d3-fec27681d15e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search_event_type
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: exposedformsearch_event_typepage_1
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:search_event_type-page_1'
+settings:
+  id: 'views_exposed_filter_block:search_event_type-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /search-event-type
+    negate: false
+    context_mapping: {  }

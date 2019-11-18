@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.events.field_event_image
     - field.field.node.events.field_event_start
     - field.field.node.events.field_event_type
+    - field.field.node.events.field_featured
     - field.field.node.events.field_paid
     - field.field.node.events.field_price
     - field.field.node.events.field_registration_form
@@ -25,6 +26,7 @@ dependencies:
   module:
     - comment
     - conditional_fields
+    - content_moderation
     - datetime
     - field_group
     - image
@@ -111,10 +113,20 @@ content:
     type: datetime_default
     region: content
   field_event_type:
-    weight: 12
-    settings: {  }
+    weight: 125
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
+    type: entity_reference_autocomplete
+    region: content
+  field_featured:
+    weight: 124
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
   field_paid:
     weight: 9
@@ -212,6 +224,19 @@ content:
     third_party_settings: {  }
     type: inline_entity_form_complex
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
   path:
     type: path
     weight: 6

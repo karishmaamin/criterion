@@ -1,0 +1,11 @@
+uuid: dd55fe05-f4b5-4e29-8876-c022b3a6e628
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.department
+id: taxonomy_vocabulary_department
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
