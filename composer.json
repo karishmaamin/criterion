@@ -36,6 +36,8 @@
         "drupal/libraries": "^3.0@alpha",
         "drupal/pathauto": "^1.5",
         "drupal/rabbit_hole": "^1.0@beta",
+        "drupal/registration_role": "^1.1",
+        "drupal/rules_webform": "^1.4",
         "drupal/search_api": "^1.15",
         "drupal/shield": "^1.2",
         "drupal/token": "^1.5",
